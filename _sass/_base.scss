@@ -22,7 +22,13 @@ body {
     background-color: $background-color;
 }
 
+.site-header {
+    background-color: $header-color
+}
 
+.site-footer {
+    background-color: $footer-color
+}
 
 /**
  * Set `margin-bottom` to maintain vertycal rhythm
