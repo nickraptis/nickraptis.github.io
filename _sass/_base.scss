@@ -19,11 +19,15 @@ body {
     line-height: $base-line-height;
     font-weight: 300;
     color: $text-color;
-    background-color: $background-color;
+    background-color: $footer-color;
 }
 
 .site-header {
     background-color: $header-color
+}
+
+.page-content {
+    background-color: $background-color
 }
 
 .site-footer {
