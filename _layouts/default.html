@@ -11,10 +11,17 @@
       <div class="wrapper">
         {{ content }}
       </div>
+      {% if page.type == 'post' %}
+      <div class="wrapper">
+      	{% include disqus_thread.html %}
+      </div>
+      {% endif %}
     </div>
 
     {% include footer.html %}
-
+    {% if page.type == 'index' %}
+   	{% include disqus_index.html %}
+    {% endif %}
   </body>
 
 </html>

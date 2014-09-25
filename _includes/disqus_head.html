@@ -1,0 +1,9 @@
+<!-- Disqus Configuration variables -->
+	<script type="text/javascript">
+		var disqus_shortname = '{{ site.disqus_shortname }}';
+		{% if page.type == 'post' %}
+		var disqus_identifier = '{{ page.id }}';
+		var disqus_title = '{{ page.title }}';
+		var disqus_url = '{{ site.url }}{{ page.url }}';
+		{% endif %}
+	</script>

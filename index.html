@@ -1,5 +1,6 @@
 ---
 layout: default
+type: index
 ---
 
 <div class="home">
@@ -11,9 +12,9 @@ layout: default
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
+        <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+        {{ post.excerpt }}
+        <span class="post-meta"><a href="{{ post.url | prepend: site.baseurl }}#disqus_thread" data-disqus-identifier="{{ post.id }}"></a></span>
       </li>
     {% endfor %}
   </ul>
