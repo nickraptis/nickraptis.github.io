@@ -101,6 +101,7 @@
     margin-bottom: $spacing-unit / 2;
 }
 
+.thanks-list,
 .contact-list,
 .social-media-list {
     list-style: none;
@@ -116,7 +117,7 @@
 
 .footer-col {
     float: left;
-    margin-bottom: $spacing-unit / 2;
+/*  margin-bottom: $spacing-unit / 2;  */
     padding-left: $spacing-unit / 2;
 }
 
