@@ -1,27 +1,22 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body>
+<body>
 
-    {% include header.html %}
+{% include header.html %}
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-      {% if page.type == 'post' %}
-      <div class="wrapper">
-      	{% include disqus_thread.html %}
-      </div>
-      {% endif %}
-    </div>
+<div class="page-content">
+  <div class="wrapper">
+    {{ content }}
+  </div>
+</div>
 
-    {% include footer.html %}
-    {% if page.type == 'index' %}
-   	{% include disqus_index.html %}
-    {% endif %}
-  </body>
+{% include footer.html %}
+{% if page.disqus %}
+{% include disqus_incl.html verb=page.disqus %}
+{% endif %}
+</body>
 
 </html>

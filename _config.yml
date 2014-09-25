@@ -77,21 +77,22 @@ defaults:
   -
     scope:
       path: ''
-      type: 'posts'
+      type: posts
     values:
-      type: 'post'
+      type: post
+      disqus: embed
   -
     scope:
       path: ''
-      type: 'pages'
+      type: pages
     values:
-      type: 'page'
+      type: page
   -
     scope:
       path: ''
-      type: 'drafts'
+      type: drafts
     values:
-      type: 'draft'
+      type: draft
 
 # Markdown Processors
 #rdiscount:
