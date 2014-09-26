@@ -58,7 +58,7 @@ highlighter: pygments
 #host:    0.0.0.0
 #baseurl: "" # does not include hostname
 baseurl: ''
-url: 'http://nickraptis.github.io'
+url: 'http://blog.airscorp.gr'
 
 # Backwards-compatibility
 #relative_permalinks: false
