@@ -65,7 +65,7 @@ url: 'http://nickraptis.github.io'
 
 # Outputting
 #permalink: date
-permalink: /:categories/:title/
+permalink: /:year/:month/:day/:title/
 #paginate_path: /page:num
 paginate_path: /page/:num
 #timezone: null
