@@ -6,6 +6,7 @@ description: >
 twitter_username: nickraptis
 github_username:  nickraptis
 disqus_shortname: codingstories
+disqus_enable:    true
 
 # Where things are
 #source:      . # not overridable by GitHub
@@ -80,6 +81,7 @@ defaults:
       type: posts
     values:
       type: post
+      layout: post
       disqus: embed
   -
     scope:
@@ -87,12 +89,14 @@ defaults:
       type: pages
     values:
       type: page
+      layout: page
   -
     scope:
       path: ''
       type: drafts
     values:
       type: draft
+      layout: post
 
 # Markdown Processors
 #rdiscount:

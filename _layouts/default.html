@@ -14,7 +14,7 @@
 </div>
 
 {% include footer.html %}
-{% if page.disqus %}
+{% if site.disqus_enable and page.disqus %}
 {% include disqus_incl.html verb=page.disqus %}
 {% endif %}
 </body>
