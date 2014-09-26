@@ -1,7 +1,7 @@
 ---
-#layout: post
+layout: post
 title:  "RVM: Ubuntu binary rubies for Linux Mint"
-#date:   2014-09-23 23:34:03 +0300
+date:   2014-09-26 17:25:40 +0300
 categories: ruby mint
 ---
 [RVM](http://rvm.io/), the Ruby Version Manager is a magnificent tool that lets
