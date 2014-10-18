@@ -5,10 +5,12 @@ description: >
   Jekyll blog about my doings and coding woes hosted on github.
 twitter_username: nickraptis
 github_username:  nickraptis
+
+# External services
 disqus_shortname: codingstories
-disqus_enable:    true
+#disqus_enable:    true
 ga_tracking_id:   UA-55878251-1
-ga_enable:        true
+#ga_enable:        true
 
 # Where things are
 #source:      . # not overridable by GitHub
