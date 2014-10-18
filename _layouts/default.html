@@ -17,6 +17,9 @@
 {% if site.disqus_enable and page.disqus %}
 {% include disqus_incl.html verb=page.disqus %}
 {% endif %}
+{% if site.ga_enable %}
+{% include ga_incl.html %}
+{% endif %}
 </body>
 
 </html>

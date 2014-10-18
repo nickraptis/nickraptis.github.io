@@ -7,6 +7,8 @@ twitter_username: nickraptis
 github_username:  nickraptis
 disqus_shortname: codingstories
 disqus_enable:    true
+ga_tracking_id: UA-55878251-1
+ga_enable: true
 
 # Where things are
 #source:      . # not overridable by GitHub
