@@ -2,7 +2,7 @@
 layout: null
 ---
 {% include feed_header.xml %}
-    {% for post in site.posts limit:10 %}
+    {% for post in site.categories[page.category] limit:10 %}
 {% include feed_post.xml post=post %}
     {% endfor %}
 {% include feed_footer.xml %}

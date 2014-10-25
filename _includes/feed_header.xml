@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>{% assign category=page.category %}
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ site.title | xml_escape }}{% if category %} - Category: {{ category | xml_escape }}{% endif %}</title>
+    <description>{{ site.description | strip_newlines | xml_escape }}</description>
+    {% capture prefix %}{% if category %}/categories/{{ category | slugify }}{% endif %}{% endcapture %}
+    <link>{{ site.url }}{{ site.baseurl }}{{ prefix }}/</link>
+    <atom:link href="{{ "/feed.xml" | prepend: prefix | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml" />
+    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
+    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+    <generator>Jekyll v{{ jekyll.version }}</generator>

@@ -1,0 +1,5 @@
+  </ul>{% assign category=page.category %}
+  {% capture prefix %}{% if category %}/categories/{{ category | sulgify }}{% endif %}{% endcapture %}
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: prefix | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
