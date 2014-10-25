@@ -128,3 +128,11 @@ kramdown:
 
 #redcloth:
 #  hard_breaks: true
+
+sass:
+#  sass_dir: _sass
+#  style:    :compact
+  #style:    :nested
+  #style:    :expanded
+  #style:    :compact
+  style:    :compressed
