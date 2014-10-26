@@ -1,0 +1,11 @@
+
+<div class="categories">
+
+  <h1 class="page-heading">Categories</h1>
+
+  <ul>
+    {% for category in site.categories %}{% assign cat=category.first %}
+    <li><a class="post-meta" href="{{ cat | slugify | prepend: '/categories/' | prepend: site.baseurl }}">{{ cat | capitalize }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
