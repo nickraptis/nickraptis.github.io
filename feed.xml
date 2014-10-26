@@ -1,8 +1,4 @@
 ---
 layout: null
 ---
-{% include feed_header.xml %}
-    {% for post in site.posts limit:10 %}
-{% include feed_post.xml post=post %}
-    {% endfor %}
-{% include feed_footer.xml %}
+{% include post_feed.xml post_list=site.posts %}

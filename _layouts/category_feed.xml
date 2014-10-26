@@ -1,8 +1,4 @@
 ---
 layout: null
 ---
-{% include feed_header.xml %}
-    {% for post in site.categories[page.category] limit:10 %}
-{% include feed_post.xml post=post %}
-    {% endfor %}
-{% include feed_footer.xml %}
+{% assign post_list=site.categories[page.category] %}{% include post_feed.xml post_list=post_list %}

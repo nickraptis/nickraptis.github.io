@@ -4,8 +4,4 @@ type: index
 disqus: count
 ---
 
-{% include index_header.html %}
-    {% for post in site.posts %}
-{% include index_post.html post=post %}
-    {% endfor %}
-{% include index_footer.html %}
+{% include post_index.html post_list=site.posts %}

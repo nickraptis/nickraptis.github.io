@@ -1,0 +1,19 @@
+<div class="home">{% assign category=page.category %}
+
+  <h1 class="page-heading">Posts{% if category %} of category {{ category | capitalize }}{% endif %}</h1>
+
+  <ul class="post-list">
+    {% for post in include.post_list %}
+    <li>
+      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+      <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+      {{ post.excerpt }}
+      <span class="post-meta"><a href="{{ post.url | prepend: site.baseurl }}#disqus_thread" data-disqus-identifier="{{ post.id }}"></a></span>
+    </li>
+    {% endfor %}
+  </ul>{% assign category=page.category %}
+  {% capture prefix %}{% if category %}/categories/{{ category | slugify }}{% endif %}{% endcapture %}
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: prefix | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
