@@ -26,6 +26,7 @@ safe: true # not overridable by GitHub
 #include:      [".htaccess"]
 #exclude:      []
 exclude:
+- CNAME
 - Gemfile
 - Gemfile.lock
 - README.md
