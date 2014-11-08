@@ -1,8 +1,9 @@
 ---
 layout: external
 title:  "The Morse Buzzer"
-date:   2011-03-20 12:00:00 +0300
+date:   2011-03-20 18:02:41 +02:00
 categories: arduino
+tags: arduino p-space
 external: "Seeing the FOSS"
 external_url: https://seeingthefoss.wordpress.com/2011/03/20/the-morse-buzzer/
 ---
