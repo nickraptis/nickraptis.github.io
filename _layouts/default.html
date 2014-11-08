@@ -14,12 +14,21 @@
 </div>
 
 {% include footer.html %}
+
+<!-- jQuery -->
+<!--[if lt IE 9]>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<![endif]-->
+<!--[if gte IE 9]><!-->
+<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+<!--<![endif]-->
 {% if site.disqus_enable and page.disqus %}
 {% include disqus_incl.html verb=page.disqus %}
 {% endif %}
 {% if site.ga_enable %}
 {% include ga_incl.html %}
 {% endif %}
+
 </body>
 
 </html>
