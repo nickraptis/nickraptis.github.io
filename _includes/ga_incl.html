@@ -7,4 +7,11 @@
 	
 	ga('create', '{{ site.ga_tracking_id }}', 'auto');
 	{% if site.ga_enable %}ga('send', 'pageview');{% endif %}
+	{% if site.ga_enable and page.type == 'index' %}
+	$('.external').click(function(){
+		ga('send', 'pageview', {
+			  'page': $(this).data('stub'),
+			  'title': this.text
+			});
+	});{% endif %}
 </script>
