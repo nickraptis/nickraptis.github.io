@@ -18,7 +18,7 @@ GEM
       thor
     celluloid (0.16.0)
       timers (~> 4.0.0)
-    classifier-reborn (2.0.1)
+    classifier-reborn (2.0.2)
       fast-stemmer (~> 1.0)
     coffee-script (2.3.0)
       coffee-script-source
@@ -82,7 +82,7 @@ GEM
     jekyll-sass-converter (1.2.0)
       sass (~> 3.2)
     jekyll-sitemap (0.6.0)
-    jekyll-watch (1.1.1)
+    jekyll-watch (1.1.2)
       listen (~> 2.7)
     jemoji (0.3.0)
       gemoji (~> 2.0)
