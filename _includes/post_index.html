@@ -4,14 +4,15 @@
 
   <ul class="post-list">
     {% for post in include.post_list %}
-    {% capture qual_url%}{{ post.url | prepend: site.baseurl }}{% endcapture %}
+    {% capture qual_url %}{{ post.url | prepend: site.baseurl }}{% endcapture %}
+    {% capture title_pref %}{% if post.external %}[{{ post.external }}] {% endif %}{% if post.language %}({{ post.language }}) {% endif %}{% endcapture %}
     <li>
       <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
     {% if post.external_url %}
-      <h2><a class="post-link external" href="{{ post.external_url }}" target="_blank" data-stub="{{ qual_url }}">[{{ post.external }}] {{ post.title }}</a></h2>
+      <h2><a class="post-link external" href="{{ post.external_url }}" target="_blank" data-stub="{{ qual_url }}">{{ title_pref }}{{ post.title }}</a></h2>
       {{ post.excerpt }}
     {% else %}
-      <h2><a class="post-link" href="{{ qual_url }}">{{ post.title }}</a></h2>
+      <h2><a class="post-link" href="{{ qual_url }}">{{ title_pref }}{{ post.title }}</a></h2>
       {{ post.excerpt }}
       <span class="post-meta"><a href="{{ qual_url }}#disqus_thread" data-disqus-identifier="{{ post.id }}"></a></span>
     {% endif %}
