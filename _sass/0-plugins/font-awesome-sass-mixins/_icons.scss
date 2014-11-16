@@ -1,0 +1,13 @@
+// Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+//   readers do not read off random characters that represent icons
+@import "icon-map";
+
+@mixin fa-mx-icon($name, $map: $icon-map) {
+  @if map-has-key($map, $name) {
+    &:before {
+      content: unicode(map-get($map, $name));
+    }
+  } @else {
+    @error('No icon with name #{$name}');
+  }
+}

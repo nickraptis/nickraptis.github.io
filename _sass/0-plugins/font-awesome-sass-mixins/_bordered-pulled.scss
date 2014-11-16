@@ -1,0 +1,17 @@
+// Bordered & Pulled
+// -------------------------
+
+@mixin fa-mx-border {
+  padding: .2em .25em .15em;
+  border: solid .08em $fa-border-color;
+  border-radius: .1em;
+}
+
+@mixin fa-mx-pull-right {
+  float: right;
+  margin-left: .3em;
+}
+@mixin fa-mx-pull-left {
+  float: left;
+  margin-right: .3em;
+}

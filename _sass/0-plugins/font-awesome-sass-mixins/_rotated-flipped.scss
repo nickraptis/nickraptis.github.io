@@ -1,0 +1,29 @@
+// Rotated & Flipped Icons
+// -------------------------
+
+// Hook for IE8-9
+@mixin fa-mx-ie-hook {
+  filter: none;
+}
+
+@mixin fa-mx-rotate-90 {
+  @include fa-icon-rotate(90deg, 1);
+  @at-root :root & { @include fa-mx-ie-hook; }
+}
+@mixin fa-mx-rotate-180 {
+  @include fa-icon-rotate(180deg, 2);
+  @at-root :root & { @include fa-mx-ie-hook; }
+}
+@mixin fa-mx-rotate-270 {
+  @include fa-icon-rotate(270deg, 3);
+  @at-root :root & { @include fa-mx-ie-hook; }
+}
+
+@mixin fa-mx-flip-horizontal {
+  @include fa-icon-flip(-1, 1, 0);
+  @at-root :root & { @include fa-mx-ie-hook; }
+}
+@mixin fa-mx-flip-vertical {
+  @include fa-icon-flip(1, -1, 2);
+  @at-root :root & { @include fa-mx-ie-hook; }
+}
