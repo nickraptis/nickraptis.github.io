@@ -1,0 +1,18 @@
+.fa {
+  span {
+    display: none;
+  }
+}
+
+.fa-github {
+  @include fa-mx-icon(github);
+}
+.fa-bitbucket {
+  @include fa-mx-icon(bitbucket);
+}
+.fa-search {
+  @include fa-mx-icon(search);
+}
+.fa-rss {
+  @include fa-mx-icon(rss);
+}

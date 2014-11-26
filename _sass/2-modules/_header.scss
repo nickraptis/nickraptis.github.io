@@ -1,0 +1,75 @@
+.site-header {
+
+  @include clearfix;
+  background: powderblue;
+
+  .wrapper {
+    @include outer-container;
+    height: 4em;
+    padding-left: 2em;
+    padding-right: 2em;
+
+    .site-title {
+      float: left;
+      font-size: 2em;
+      line-height: 0.5 * 4em;
+    }
+
+
+    .right {
+      float: right;
+
+      .pages, .social {
+        float: left;
+      }
+
+      .pages {
+        a {
+          font-size: 1.2em;
+          @include padding(1.12em null null 1em);
+          float: left;
+
+          &:last-child {
+            @include padding(null 2em null null);
+          }
+        }
+      }
+
+      a.fa {
+        @include fa-mx-2x;
+        line-height: 0.5 * 4em;
+        @include padding(null null null 0.5 * 1em);
+        float: left;
+
+        &.fa-rss {
+          @include padding(null null null 0);
+        }
+      }
+
+      .search {
+        float: left;
+        width: 16em;
+        position: relative;
+        @include padding(1em);
+
+        input {
+          background: $base-link-color;
+          color: powderblue;
+          @include margin(0);
+          @include padding(0.4em);
+          border-radius: 6px;
+          border-color: gray;
+          box-shadow: none;
+        }
+
+        button {
+          display: inline-block;
+          cursor: pointer;
+          @include position(absolute, 1.24em 1.24em null null);
+          @include padding(0.3em 0.4em);
+          color: powderblue;
+        }
+      }
+    }
+  }
+}
