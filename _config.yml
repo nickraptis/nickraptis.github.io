@@ -54,7 +54,7 @@ gems:
 #markdown: kramdown
 markdown: redcarpet
 #highlighter: pygments # overridable by GitHub
-highlighter: pygments
+highlighter: rouge
 #lsi: false # not overridable by GitHub
 #excerpt_separator: "\n\n"
 
